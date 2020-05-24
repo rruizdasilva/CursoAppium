@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class DrangAndDragTeste extends BaseTest {
+public class DragAndDropTeste extends BaseTest {
 
     private MenuPage menuPage = new MenuPage();
     private DragAndDropPage dragAndDropPage = new DragAndDropPage();

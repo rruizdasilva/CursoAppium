@@ -1,10 +1,7 @@
 package br.com.rruizdasilva.appium.page;
 
 import br.com.rruizdasilva.appium.core.BasePage;
-import org.junit.After;
 import org.openqa.selenium.By;
-
-import java.util.Set;
 
 import static br.com.rruizdasilva.appium.core.DriverFactory.getDriver;
 

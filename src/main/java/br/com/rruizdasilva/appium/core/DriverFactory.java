@@ -14,8 +14,8 @@ public class DriverFactory {
 
     public static AndroidDriver<MobileElement> getDriver() {
         if (driver == null) {
-            createDriver();
-            // createTestObjectDriver();
+            // createDriver();
+            createTestObjectDriver();
         }
         return driver;
     }
@@ -39,7 +39,8 @@ public class DriverFactory {
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("testobject_api_key", "90A2E47EA0C54BC3B2300547C77ADC3A");
         desiredCapabilities.setCapability("automationName", "uiautomator2");
-        desiredCapabilities.setCapability("appiumVersion", "1.7.2");
+        desiredCapabilities.setCapability("autoGrantPermissions", "true");
+        desiredCapabilities.setCapability("appiumVersion", "1.15.0");
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("https://us1.appium.testobject.com/wd/hub"), desiredCapabilities);
